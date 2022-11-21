@@ -128,7 +128,7 @@ img {
     font-family: "EB Garamond", serif; }
 
 #header-home {
-  background: url("../img/empire.jpg") no-repeat center right/cover;
+  background: url("../img/empire.webp") no-repeat center right/cover;
   height: 100vh;
   color: white; }
   #header-home .header-content {
