@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -64,6 +65,28 @@ input[class^='btn-']:hover {
 
 .highlight-main {
   color: #ffbc00; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 800;
+  quotes: "“" "”" "‘" "’";
+  text-transform: capitalize; }
+
+.section-title::before {
+  content: open-quote; }
+
+.section-title::after {
+  content: close-quote; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 * {
   margin: 0;
@@ -172,3 +195,62 @@ img {
       background: #f4f4f4; }
     #home-b .stats div:nth-child(even) {
       background: #ccc; }
+
+#home-c .trap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center; }
+  #home-c .trap-step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    background: #ffbc00;
+    color: #fff;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    padding: 1rem;
+    transition: all 1s; }
+  #home-c .trap-icon {
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+    transition: all 1s; }
+    #home-c .trap-icon:hover {
+      background: #ffbc00;
+      width: 90px;
+      height: 90px;
+      line-height: 90px; }
+      #home-c .trap-icon:hover .trap-step {
+        background: #333;
+        color: #fff; }
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem; }
+      #main-footer .footer-content .social .fab:hover {
+        background-color: #ffbc00; }
