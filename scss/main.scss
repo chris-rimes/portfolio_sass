@@ -2,6 +2,7 @@
 @import "utilities";
 @import "item_grid";
 
+
 // General Styles
 * {
   margin: 0;
@@ -405,3 +406,6 @@ img {
     }
   }
 }
+
+// import Media Queries
+@import "media.scss";
